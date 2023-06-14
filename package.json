@@ -1,8 +1,8 @@
 {
   "type": "module",
-  "name": "typescript-template",
+  "name": "@organicdesign/net-rpc",
   "version": "0.1.0",
-  "description": "A template for NodeJS projects using typescript.",
+  "description": "RPC client/server over TCP.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

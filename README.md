@@ -1,16 +1,10 @@
-# typescript-template
+# net-rpc
 
-A template for NodeJS projects using typescript.
+RPC client/server over TCP.
 
-## Setup
 
-1. Edit the `package.json` and change the following values:
-	* name
-	* description
-	* author
-	* version
-	* repository
+## Install
 
-2. Prefix the test command with `NODE_OPTIONS=--experimental-vm-modules` if needed. (Needed for pacakge/subpackage imports.)
-
-3. Update this `README.md` file.
+```
+npm i @organicdesign/net-rpc
+```
