@@ -1,8 +1,12 @@
 {
   "type": "module",
   "name": "@organicdesign/net-rpc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "RPC client/server over TCP.",
+  "keywords": [
+    "tcp",
+    "rpc"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -13,8 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://code.organicdesign.nz/organicdesign/net-rpc.git"
+    "url": "https://github.com/organicdesign/net-rpc.git"
   },
+  "homepage": "https://code.organicdesign.nz/organicdesign/net-rpc.git",
   "author": "Saul Boyd",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
