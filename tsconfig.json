@@ -4,8 +4,12 @@
 		"noImplicitThis": true,
 		"strictNullChecks": true,
 		"esModuleInterop": true,
-		"moduleResolution": "node",
 		"declaration": true,
+    "declarationMap": true,
+    "skipLibCheck": true,
+		"strict": true,
+    "forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
 		"module": "ES2022",
 		"outDir": "./dist",
 		"target": "ES6"
