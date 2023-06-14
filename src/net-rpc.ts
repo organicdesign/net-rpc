@@ -34,7 +34,10 @@ export const createNetClient = (path: string): NetClient => {
 			for await (const data of parseSocket(writer, client)) {
 				rpc.receiveAndSend(data);
 			}
-		} catch (error) {}
+		} catch (error) {
+			// Ignore errors because we will close immediately after.
+			console.error(error);
+		}
 
 		close();
 	})();
@@ -75,7 +78,10 @@ export const createNetServer = async (path: string): Promise<NetServer> => {
 			for await (const data of parseSocket(writer, socket)) {
 				rpc.receiveAndSend(data, id, id);
 			}
-		} catch (error) {}
+		} catch (error) {
+			// Ignore errors because we will close immediately after.
+			console.error(error);
+		}
 
 		// Socket was closed
 		writer.end();
@@ -104,4 +110,4 @@ export const createNetServer = async (path: string): Promise<NetServer> => {
 	await new Promise<void>(resolve => server.listen(path, resolve));
 
 	return { rpc, server, close };
-}
+};
