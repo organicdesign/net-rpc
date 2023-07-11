@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@organicdesign/net-rpc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "RPC client/server over TCP.",
   "keywords": [
     "tcp",
