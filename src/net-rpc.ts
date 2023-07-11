@@ -36,7 +36,9 @@ export const createNetClient = (path: string): NetClient => {
 			}
 		} catch (error) {
 			// Ignore errors because we will close immediately after.
-			console.error(error);
+			if (error?.["code"] !== "ERR_STREAM_PREMATURE_CLOSE") {
+				console.error(error);
+			}
 		}
 
 		close();
